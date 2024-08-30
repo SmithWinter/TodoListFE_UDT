@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="header-todo">Todo List</h2>
+            <button class="button-logout" id="logout" onclick="app.logout()">Logout</button>
+        </div>
+        <div class="input-container">
+            <input type="text" id="task-name" placeholder="Task name...">
+            <button id="add-task-button">Add</button>
+            <button id="cancel-edit-button" style="display:none;">Cancel</button>
+        </div>
+        <ul id="todo-list"></ul>
+        <div class="filter-container">
+            <label for="filter-input">Filter:</label>
+            <select id="filter-input">
+                <option value="all">All</option>
+                <option value="done">Done</option>
+                <option value="undone">Undone</option>
+            </select>
+        </div>
+    </div>
+    
+    <script src="../../controllers/todoManagement.js" defer></script>
+
+</body>
+
+</html>
