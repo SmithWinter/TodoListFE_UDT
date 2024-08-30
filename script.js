@@ -14,6 +14,9 @@ function Login() {
 };
 
 function checkAccountOnLogin(accountData, username, password, checkedBox) {
+  if (accountData === null ) {
+    alert('Account does not exist');
+  }
   if (!accountData && !accountData.length) {
     alert('Account does not exist');
   }
